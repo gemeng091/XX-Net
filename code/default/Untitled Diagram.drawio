@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-20T11:33:15.973Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="_26s74Z-AIxmJBcZKoTY" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-20T11:36:04.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="drU_OQoVEitrHPgVA2lM" version="13.8.0" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2248" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -117,7 +117,7 @@
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-155" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpSize=8;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;startSize=19;sourcePerimeterSpacing=2;endSize=10;targetPerimeterSpacing=13;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1" source="ZftnwTE5uSLvCgGLiOcV-154" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-154" value="常规重要的数据源进行硬编码：&lt;br&gt;轨迹、订单、实名制、网点、员工，方便进行开发和维护，&lt;br&gt;支持动态扩展数据源，&lt;br&gt;数据源表：&lt;br&gt;数据源的类型、&lt;br&gt;数据源的逻辑脚本" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;fontStyle=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="ZftnwTE5uSLvCgGLiOcV-154" value="常规重要的数据源进行硬编码：&lt;br&gt;轨迹、订单、实名制、网点、员工，方便进行开发和维护&lt;br&gt;&lt;br&gt;支持动态扩展数据源，&lt;br&gt;数据源表：&lt;br&gt;数据源的类型-mq，定时任务、&lt;br&gt;mq配置、&lt;br&gt;定时任务拉取http配置、&lt;br&gt;数据源的逻辑脚本、&lt;br&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;fontStyle=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
           <mxGeometry x="1250" y="-16.25" width="200" height="242.5" as="geometry" />
         </mxCell>
       </root>
