@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T02:13:56.479Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="mQIxFV5xFpGWJ9nT0-da" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-21T07:04:51.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="9MGbLUCidkHiL-KEGCJI" version="13.8.0" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="2672" dy="2223" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -116,6 +116,11 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="ZftnwTE5uSLvCgGLiOcV-191" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZftnwTE5uSLvCgGLiOcV-157">
+          <mxGeometry x="-0.3368" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-160" value="临时数据缓存，二次处理后可直接通过http、https发送的数据缓存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;rotation=-45;" vertex="1" parent="1">
           <mxGeometry x="30" y="480" width="360" height="20" as="geometry" />
         </mxCell>
@@ -204,6 +209,15 @@
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-189" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="7" y="1250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZftnwTE5uSLvCgGLiOcV-192" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="872.5" as="sourcePoint" />
+            <mxPoint x="870" y="672.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZftnwTE5uSLvCgGLiOcV-193" value="推送前进行数据备份，或者问题文件备份" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;rotation=-55;" vertex="1" parent="1">
+          <mxGeometry x="650" y="770" width="230" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
