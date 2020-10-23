@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T08:04:42.751Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="sk1hkarQ_4KoxqbaltLu" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-23T05:12:38.351Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36" etag="wh7NYqthtbWP_HajcRYv" version="13.8.0" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2370" dy="2439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -53,7 +53,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-123" value="订阅机构、&lt;br&gt;订阅数据数据类型、&lt;br&gt;订阅数据过滤条件（按城市、类型）&lt;br&gt;推送方式、&lt;br&gt;推送地址、&lt;br&gt;是否批量推送（批量推送需要缓存redis，不批量推送直接发送到mq里面）、&lt;br&gt;批量推送条数、&lt;br&gt;是否使用vpn推送&lt;br&gt;...&lt;br&gt;考虑到政府推送的平滑迁移，&lt;br&gt;完全参照政府订阅推送的字段表，&lt;br&gt;主要新添加的有：&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;是否批量推送&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;fontStyle=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="267.5" width="200" height="242.5" as="geometry" />
+          <mxGeometry x="990" y="267.5" width="200" height="242.5" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-150" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpSize=8;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startSize=19;sourcePerimeterSpacing=2;endSize=10;targetPerimeterSpacing=13;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1" source="ZftnwTE5uSLvCgGLiOcV-133" target="ZftnwTE5uSLvCgGLiOcV-149">
           <mxGeometry relative="1" as="geometry" />
@@ -83,7 +83,7 @@
           <mxGeometry x="805" y="465" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-145" value="定时拉取缓存订阅表数据信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="360" width="170" height="20" as="geometry" />
+          <mxGeometry x="805" y="360" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-148" value="①数据推送任务通过mq发给push端进行redis、或者oss拉取推送。&lt;br&gt;②数据的二次处理处理，如整体加密转换，ftp、sftp转换文件转换处理任务，&lt;br&gt;该任务发出后依然由handler端进行消费和处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="591.25" width="420" height="50" as="geometry" />
@@ -97,17 +97,11 @@
             <mxPoint x="310" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-153" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="900" y="700" as="sourcePoint" />
-            <mxPoint x="760" y="910" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-155" style="edgeStyle=orthogonalEdgeStyle;rounded=1;jumpSize=8;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;startSize=19;sourcePerimeterSpacing=2;endSize=10;targetPerimeterSpacing=13;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1" source="ZftnwTE5uSLvCgGLiOcV-154" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-154" value="常规重要的数据源进行硬编码：&lt;br&gt;轨迹、订单、实名制、网点、员工，方便进行开发和维护&lt;br&gt;&lt;br&gt;支持动态扩展数据源，&lt;br&gt;数据源表：&lt;br&gt;数据源的类型-mq，定时任务、&lt;br&gt;mq配置、&lt;br&gt;定时任务拉取http配置、&lt;br&gt;数据源的逻辑脚本、&lt;br&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;fontStyle=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="-16.25" width="200" height="242.5" as="geometry" />
+          <mxGeometry x="1139" y="-16.25" width="200" height="242.5" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-157" value="" style="endArrow=classic;html=1;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -126,57 +120,6 @@
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-161" value="http、https直接数据读取" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;rotation=60;" vertex="1" parent="1">
           <mxGeometry x="210" y="780" width="150" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-162" value="ftp、sftp文件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;rotation=-60;" vertex="1" parent="1">
-          <mxGeometry x="770" y="790" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-163" value="" style="endArrow=classic;html=1;strokeColor=#FF3333;fillColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZftnwTE5uSLvCgGLiOcV-149" target="ZftnwTE5uSLvCgGLiOcV-166">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="370" y="1120" as="sourcePoint" />
-            <mxPoint x="230" y="1260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-164" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-166" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="485" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-168" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="330" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-170" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="565" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-172" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="640" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-174" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="720" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-179" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="250" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-181" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="800" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-183" value="客户系统" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="170" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-185" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="880" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-186" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="960" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-187" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="1040" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-188" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="90" y="1160" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ZftnwTE5uSLvCgGLiOcV-189" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;客户系统&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="7" y="1160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZftnwTE5uSLvCgGLiOcV-192" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#FF3333;fillColor=#FFFFFF;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
